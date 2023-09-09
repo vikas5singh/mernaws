@@ -34,6 +34,8 @@ return(
 <table>
 <tr>
 <th>ID</th>
+<th>Vikas singh main Name</th>
+<th>Email</th>
 <th>Name</th>
 <th>Email bhai</th>
 <th>Password</th>
