@@ -35,7 +35,7 @@ return(
 <tr>
 <th>ID</th>
 <th>Name</th>
-<th>Email</th>
+<th>Email bhai</th>
 <th>Password</th>
 <th>Role</th>
 <th>Action</th>
