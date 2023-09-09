@@ -1,0 +1,133 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.navBar .logoBar{
+width: auto;
+}
+.navBar .logo-img{
+    max-width: 30%;
+}
+
+.menuBar{
+display:flex;
+align-items: baseline;
+}
+
+.menuItem{
+display:flex;
+margin-left:auto;
+}
+
+li.menuList{
+padding-right:60px;
+list-style:none;
+}
+
+a.menuLink{
+text-decoration: none;
+}
+
+form{
+border: 2px solid black;
+margin-top: 2rem;
+
+padding: 50px;
+}
+
+.form-group{
+    padding: 10px;
+	
+}
+
+.form-group .labelControl{
+    padding-right: 200px;
+}
+
+.form-group .formControl{
+width: 50%;
+}
+
+input.roddioinp {
+    margin-right: 10px;
+}
+select.seldrop {
+    margin: -30px;
+}
+
+span.error {
+    padding-left: 70px;
+}
+
+.form-button{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+button.btn-primary{
+    color: white;
+    background: royalblue;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table {
+    border: 2px solid;
+    margin-top: 2rem;
+}
+
+.userTable td, th, tr {
+    border-width: 1px!important;
+}
+
+.dashboard-heading {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+input.loginEmail {
+    margin: 27px;
+}
+
+span.errorHeading {
+    padding-left: 400px;
+}
