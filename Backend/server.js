@@ -14,10 +14,9 @@ app.use(bodyParser.json()); // handle the middle
 const buildPath = path.join(__dirname, '../Frontend/dist');
 app.use(express.static(buildPath));
 console.log('Full path:', buildPath);
-
 //Database configration
 mongoose.set('strictQuery', false);
-mongoose.connect(db.DB, {useNewUrlParser: true}).then(()=>{
+mongoose.connect('mongodb://localhost:27017/mernTest', {useNewUrlParser: true}).then(()=>{
 console.log('Database is sucessfull connect');
 }).catch(err=>{console.log('Connection :'+err);});
 // Basic routes
