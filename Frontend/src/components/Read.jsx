@@ -6,7 +6,7 @@ function Read() {
 	console.log(product.name);
     const { id } = useParams();
 	const fetchData = () => {
-    axios.get(`http://localhost:4000/api/read/${id}`)
+    axios.get(`http://13.232.135.93:4000/api/read/${id}`)
           .then((response) =>{ setProduct(response.data.data);
 		  }).catch((err)=>{console.log("Please Check the Error : ", err)});
   }

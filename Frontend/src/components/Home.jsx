@@ -43,7 +43,7 @@ const handleClick = (e)=>{
 		  setEmailError('Enter valid Email!');
 		}
 e.preventDefault();
-axios.post('http://localhost:4000/api/login', 
+axios.post('http://13.232.135.93:4000/api/login', 
 {
 email:data.email,
 password:data.password,

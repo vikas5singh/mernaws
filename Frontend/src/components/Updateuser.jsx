@@ -40,7 +40,7 @@ console.log(arrayTotal);
 const navigate = useNavigate();
 
 const GetData = async () => {  
-const result = await axios.get(`http://localhost:4000/api/read/${id}`); 
+const result = await axios.get(`http://13.232.135.93:4000/api/read/${id}`); 
 setemployee(result.data.data);  
 };
 
@@ -59,7 +59,7 @@ const handleSubmit = async (e) => {
 		formData.append('password', employee.password);
 		formData.append('checkbox', employee.checkbox);
 		formData.append('gender', employee.gender);
-            await axios.put(`http://localhost:4000/api/update/${id}`,formData,{
+            await axios.put(`http://13.232.135.93:4000/api/update/${id}`,formData,{
   headers: {
     'Content-Type': 'multipart/form-data'
   }

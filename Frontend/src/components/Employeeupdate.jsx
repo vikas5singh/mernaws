@@ -24,7 +24,7 @@ console.log(employee);
 const navigate = useNavigate();
 
 const GetData = async () => {  
-const result = await axios.get(`http://localhost:4000/api/reademployee/${id}`); 
+const result = await axios.get(`http://13.232.135.93:4000/api/reademployee/${id}`); 
 setemployee(result.data.data);  
 };
 
@@ -96,7 +96,7 @@ const handleSubmit = async (e) => {
 		formData.append('gender', employee.gender);
 		formData.append('gender', employee.course);
 		formData.append('imgupload', employee.imgupload);
-            await axios.put(`http://localhost:4000/api/employeeupdate/${id}`,formData,{
+            await axios.put(`http://13.232.135.93:4000/api/employeeupdate/${id}`,formData,{
   headers: {
     'Content-Type': 'multipart/form-data'
   }

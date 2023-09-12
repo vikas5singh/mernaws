@@ -6,7 +6,7 @@ function Reademployee() {
 	console.log(product.name);
     const { id } = useParams();
 	const fetchData = () => {
-    axios.get(`http://localhost:4000/api/reademployee/${id}`)
+    axios.get(`http://13.232.135.93:4000/api/reademployee/${id}`)
           .then((response) =>{ setProduct(response.data.data);
 		  }).catch((err)=>{console.log("Please Check the Error : ", err)});
   }
@@ -36,7 +36,7 @@ function Reademployee() {
 </tr>
 <tr>
 <td>{product._id}</td>
-<td><img src={"http://localhost:4000/images/"+product.imgupload} width="60" height="60" /></td>
+<td><img src={"http://13.232.135.93:4000/images/"+product.imgupload} width="60" height="60" /></td>
 <td>{product.name}</td>
 <td>{product.email}</td>
 <td>{product.mobileno}</td>

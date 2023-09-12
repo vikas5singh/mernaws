@@ -9,13 +9,13 @@ const [user, setUser] = useState([]);
         navigate("/updateuser/" + id);
   }
   const LoadDelete = (id) => {
-        axios.delete(`http://localhost:4000/api/delete/${id}`)
+        axios.delete(`http://13.232.135.93:4000/api/delete/${id}`)
           .then((response) =>{ setUser(response.data);
 		 window.location.reload();
 		  }).catch((err)=>{console.log("Please Check the Error : ", err)});
   }
 const fetchData = () => {
-    axios.get("http://localhost:4000/api/allusers")
+    axios.get("http://13.232.135.93:4000/api/allusers")
           .then((response) =>{ setUser(response.data);
 		  }).catch((err)=>{console.log("Please Check the Error : ", err)});
   }

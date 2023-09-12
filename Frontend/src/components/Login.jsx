@@ -12,7 +12,7 @@ return(
 
 <div className="navBar">
 <div className="logoBar">
-<img src="http://localhost:4000/assets/vikas.png" className="logo-img vikas" />
+<img src="http://13.232.135.93:4000/assets/vikas.png" className="logo-img vikas" />
 </div>
 <div className="menuBar">
 <ul className="menuItem">

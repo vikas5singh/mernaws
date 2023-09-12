@@ -126,7 +126,7 @@ setData({...data, [e.target.name]:e.target.value});
 		formData.append('gender', data.gender);
 		formData.append('course', data.course);
 		formData.append('imgupload', data.imgupload);
-            await axios.post('http://localhost:4000/api/createemployees',formData,{
+            await axios.post('http://13.232.135.93:4000/api/createemployees',formData,{
   headers: {
     'Content-Type': 'multipart/form-data'
   }

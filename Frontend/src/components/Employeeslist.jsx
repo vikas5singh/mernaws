@@ -9,13 +9,13 @@ console.log(user);
         navigate("/employeeupdate/" + id);
   }
   const LoadDelete = (id) => {
-        axios.delete(`http://localhost:4000/api/empoyeedelete/${id}`)
+        axios.delete(`http://13.232.135.93:4000/api/empoyeedelete/${id}`)
           .then((response) =>{ setUser(response.data);
 		 window.location.reload();
 		  }).catch((err)=>{console.log("Please Check the Error : ", err)});
   }
 const fetchData = () => {
-    axios.get("http://localhost:4000/api/getallemployee")
+    axios.get("http://13.232.135.93:4000/getallemployee")
           .then((response) =>{ setUser(response.data);
 		  }).catch((err)=>{console.log("Please Check the Error : ", err)});
   }
@@ -47,7 +47,7 @@ return(
 {user.data && user.data.length > 0 && user.data.map((userObj, index) => (
 <tr key={index}>
 <td>{userObj._id}</td>
-<td><img src={"http://localhost:4000/images/"+userObj.imgupload} width="60" height="60" /></td>
+<td><img src={"http://13.232.135.93:4000/images/"+userObj.imgupload} width="60" height="60" /></td>
 <td>{userObj.name}</td>
 <td>{userObj.email}</td>
 <td>{userObj.mobileno}</td>

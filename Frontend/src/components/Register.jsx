@@ -39,7 +39,7 @@ setData({...data, [e.target.name]:e.target.value})
 		formData.append('password', data.password);
 		formData.append('checkbox', data.checkbox);
 		formData.append('gender', data.gender);
-            await axios.post('http://localhost:4000/api/register',formData,{
+            await axios.post('http://13.232.135.93:4000/api/register',formData,{
   headers: {
     'Content-Type': 'multipart/form-data'
   }
