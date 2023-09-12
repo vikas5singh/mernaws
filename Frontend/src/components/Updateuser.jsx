@@ -73,6 +73,7 @@ const handleSubmit = async (e) => {
 	
 const handleChange = (e) => {  
 e.persist();  
+
 setemployee({...employee, [e.target.name]: e.target.value});  
 }  	
 
@@ -161,6 +162,7 @@ onChange={getPjl}
   />
   Orange
 </label>
+
 </div>
 <div className="form-group">
 <button className="btn btn-primary" type="submit" onClick={handleSubmit} >Update</button>
